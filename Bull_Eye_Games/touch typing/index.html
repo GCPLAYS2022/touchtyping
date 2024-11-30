@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bull's Eye Games</title>
+<meta charset="utf-8">
+<link rel="icon" href="favicon-16x16.png">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/typing.css">
+<script src="js/util.js"></script>
+<script src="js/units.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/tutor.js"></script>
+<script>
+window.onload = function()
+{
+    Tutor.init()
+
+    if (typeof Update == 'object' && typeof Update.check == 'function') {
+        Update.check()
+    }
+}
+</script>
+</head>
+<body>
+
+<div id="header">
+    <h1><a href="../home.html">Bull's Eye Games</a></h1>
+    <h2 id="unitTitle"></h2>
+    <div id="navigation">
+        <a href="index.html">Tutor</a>
+        <a href="LICENSE.html">License</a>
+    </div>
+
+</div>
+<div id="mainWrapper">
+<div id="main">
+    <div id="content">
+        <div id="unitLinks"></div>
+
+        <div id="practicePanelWrapper">
+        <div id="update" class="warning">
+            <p>You are using
+            <strong>Bull's Eye Games &nbsp;<span id="thisVersion"></span></strong>.
+            The latest stable version of this application
+        </div>
+        <div id="practicePanel">
+            <div id="previousLink">
+                <a href="#previous">&laquo;</a>
+            </div>
+
+            <div id="practicePane">
+
+                <div id="subunitLinks">
+                    <div class="stretch"></div>
+                </div> 
+                <div id="target"></div>
+
+                <div id="feedbackPane">
+                    <div id="statusPane">
+                        <div id="status"></div>
+                        <div id="remark"></div>
+                        <div id="advice"></div>
+                    </div>
+                    <div id="progressPane">
+                        <div id="progress">
+                            <progress id="progressBar" value="0" max="100">
+                            </progress>
+                            <div>
+                                <span id="progressPercent"></span>
+                            </div>
+                        </div>
+                        <div id="restartLink">
+                            <a href="#restart" title="Start over">Restart</a>
+                        </div>
+                    </div>
+                    <div id="resultPane">
+                        <div id="speed"></div>
+                        <div id="error"></div>
+                        <div id="smiley"></div>
+                    </div>
+                </div> 
+
+                <div id="inputPane">
+                    <textarea id="input" rows="5" autocomplete="off"
+                              spellcheck="false"></textarea>
+                </div> 
+
+                <div id="alternateUnitLinks">
+                </div>
+
+            </div> 
+
+            <div id="nextLink">
+                <a href="#next">&raquo;</a>
+            </div>
+        </div> 
+
+        <div id="guidePane">
+            <div>
+                <a id="guideLink" href="#"></a>
+            </div>
+            <div id="guide"></div>
+        </div> 
+        </div> 
+
+        <noscript>
+        <div id="noscriptWrapper">
+            <div id="noscript">
+            </div>
+        </div>
+        </noscript>
+
+    </div> 
+</div> 
+</div> 
+
+<div id="footer">
+    <div id="navigation">
+        <a href="index.html">Tutor</a>
+        <a href="LICENSE.html">License</a>
+    </div> 
+    <div id="copyright">
+        <p>
+        Bull's Eye Games <br>
+        &copy; 2024 Gian Chiac, Adolfo Duenas, Larry Choc, Jeffery Coc, Fedrick Robinson</a>
+        </p>
+        <p>
+        This is a free and easy to use software that will help you become a master at touch typing in no time!
+        <a href="LICENSE.html">License</a>.
+        </p>
+    </div>
+</body>
+</html>
